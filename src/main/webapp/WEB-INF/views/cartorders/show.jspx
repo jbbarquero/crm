@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_malsolo_crm_domain_CartOrder" object="${cartorder}" path="/cartorders" z="iSZwuY/LTWVwODagqPbB9vEY+Dg=">
+        <field:display field="customerId" id="s_com_malsolo_crm_domain_CartOrder_customerId" object="${cartorder}" z="NIwa2jsH25dqis0Q01iWNT3YSSg="/>
+        <field:display date="true" dateTimePattern="${cartOrder_dateoforder_date_format}" field="dateOfOrder" id="s_com_malsolo_crm_domain_CartOrder_dateOfOrder" object="${cartorder}" z="AORv6KDRWJJf8/0b3ppw11Ty7V8="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_malsolo_crm_domain_CartOrder" modelAttribute="cartOrder" path="/cartorders" render="${empty dependencies}" z="9eb3EidxCR0m+V8183nPJvOd9EA=">
+        <field:simple field="lineItems" id="c_com_malsolo_crm_domain_CartOrder_lineItems" messageCode="entity_reference_not_managed" messageCodeAttribute="Line Item" z="uFhZc9p1nx3vYMrphBqMMDcceR4="/>
+        <field:select field="customerId" id="c_com_malsolo_crm_domain_CartOrder_customerId" itemValue="customerId" items="${customers}" path="/customers" z="lb7IT12t9oR1SZYb/4PqRVLkziw="/>
+        <field:datetime dateTimePattern="${cartOrder_dateoforder_date_format}" field="dateOfOrder" id="c_com_malsolo_crm_domain_CartOrder_dateOfOrder" z="hbh4uPtgQvrPg/2pgaNQo+Mpb7w="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_malsolo_crm_domain_CartOrder" render="${not empty dependencies}" z="7pQv0Q1p0F1HrAiVkNiKVqQ9Ups="/>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_malsolo_crm_domain_Company" items="${companys}" z="g66KSgGgfuYJwO5miYoXuAjhgCg=">
+        <table:table data="${companys}" id="l_com_malsolo_crm_domain_Company" path="/companys" typeIdFieldName="companyId" z="khAHWWdOlnpkmMkAZdQ4ZvBUXbM=">
+            <table:column id="c_com_malsolo_crm_domain_Company_customers" property="customers" z="GHGJ0YhmPMQA0Xdoe539hYZukbg="/>
+            <table:column id="c_com_malsolo_crm_domain_Company_company" property="company" z="yEG8xSka6I//iwWNn6BFkbFx3Zk="/>
+        </table:table>
+    </page:list>
+</div>

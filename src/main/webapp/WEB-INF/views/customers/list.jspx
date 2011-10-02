@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_malsolo_crm_domain_Customer" items="${customers}" z="ybL9IAgNq7WVg/5iq+OSMSgrEX8=">
+        <table:table data="${customers}" id="l_com_malsolo_crm_domain_Customer" path="/customers" typeIdFieldName="customerId" z="/dJXfLERS7V+QknQE+tVN6KX9ek=">
+            <table:column id="c_com_malsolo_crm_domain_Customer_cartOrders" property="cartOrders" z="JiG6Rii8xRQwlbmz68s03WcODeE="/>
+            <table:column id="c_com_malsolo_crm_domain_Customer_companyId" property="companyId" z="+XsefC3rOAVlhlP25+Qtgb5r6f8="/>
+            <table:column id="c_com_malsolo_crm_domain_Customer_lastName" property="lastName" z="pjPp8AHBbJkK/GEyO9Fzqf0fvgY="/>
+            <table:column id="c_com_malsolo_crm_domain_Customer_firstName" property="firstName" z="Fcd8IQqkUuWrMZ+T5scX7/NprTY="/>
+        </table:table>
+    </page:list>
+</div>

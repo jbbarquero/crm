@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_customer" z="Wa+bVSiDyYo/wX1nGU1B/z+OKhE=">
+            <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
+            <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
+        </menu:category>
+        <menu:category id="c_company" z="tmJjNcrRZwdZqruFqwG+TB5GMek=">
+            <menu:item id="i_company_new" messageCode="global_menu_new" url="/companys?form" z="SWjXbZ96+4L3yJZ+Q7yyqEFQPV4="/>
+            <menu:item id="i_company_list" messageCode="global_menu_list" url="/companys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="vk1qspgPYbGCO4tYu2Ikm8DhmbY="/>
+        </menu:category>
+        <menu:category id="c_cartorder" z="n/qQfs/Me6DYWMeDIvrgKh+T1AU=">
+            <menu:item id="i_cartorder_new" messageCode="global_menu_new" url="/cartorders?form" z="aquXUFhKBsDLSz/Hc/JB3ZY8XSc="/>
+            <menu:item id="i_cartorder_list" messageCode="global_menu_list" url="/cartorders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="N2IvWY3YWLZRfi62xIfZLPmfb/o="/>
+        </menu:category>
+        <menu:category id="c_lineitem" z="7ttrMhg2QoEhpTJFMHv0hePKox8=">
+            <menu:item id="i_lineitem_new" messageCode="global_menu_new" url="/lineitems?form" z="+2N5rUSiJFnJdn5LGmrbhiJxQIc="/>
+            <menu:item id="i_lineitem_list" messageCode="global_menu_list" url="/lineitems?page=1&amp;size=${empty param.size ? 10 : param.size}" z="20ZtdcDRG82j50DW4DkDEAFScm8="/>
+        </menu:category>
+        <menu:category id="c_product" z="vJ6efqiSxFssuvqFTsXpvZ3AvA8=">
+            <menu:item id="i_product_new" messageCode="global_menu_new" url="/products?form" z="Ezf8cTW61d2RkMNEcYkDJpG01kc="/>
+            <menu:item id="i_product_list" messageCode="global_menu_list" url="/products?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kEeyCmUUYXShbDEWwOLheaAkM50="/>
+        </menu:category>
+    </menu:menu>
+</div>

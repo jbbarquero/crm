@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_malsolo_crm_domain_CartOrder" items="${cartorders}" z="tExiGt9ZRRD0nY56H5Jd5OLFHsU=">
+        <table:table data="${cartorders}" id="l_com_malsolo_crm_domain_CartOrder" path="/cartorders" typeIdFieldName="cartOrderId" z="CNfeiaP+9824+Dgf6z3d8EbpRQM=">
+            <table:column id="c_com_malsolo_crm_domain_CartOrder_lineItems" property="lineItems" z="QoDw9HDFQVolMN60NKttUV6DXa0="/>
+            <table:column id="c_com_malsolo_crm_domain_CartOrder_customerId" property="customerId" z="Bgk3TsW1Eos/alnzwvYML1EZD7g="/>
+            <table:column date="true" dateTimePattern="${cartOrder_dateoforder_date_format}" id="c_com_malsolo_crm_domain_CartOrder_dateOfOrder" property="dateOfOrder" z="Uy61a1h2JbDSyojRXcY6MVGm9/w="/>
+        </table:table>
+    </page:list>
+</div>

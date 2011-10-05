@@ -23,5 +23,8 @@
             <menu:item id="i_product_new" messageCode="global_menu_new" url="/products?form" z="Ezf8cTW61d2RkMNEcYkDJpG01kc="/>
             <menu:item id="i_product_list" messageCode="global_menu_list" url="/products?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kEeyCmUUYXShbDEWwOLheaAkM50="/>
         </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__databaseinfoindex_id" messageCode="global_generic" url="/databaseinfo/index" z="jTcaKlMcU34ArTuIRzelV0zHg+E="/>
+        </menu:category>
     </menu:menu>
 </div>

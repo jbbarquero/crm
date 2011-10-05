@@ -4,6 +4,7 @@
 package com.malsolo.crm.domain;
 
 import com.malsolo.crm.domain.Company;
+import com.malsolo.crm.domain.CompanyDataOnDemand;
 import com.malsolo.crm.domain.Customer;
 import java.lang.String;
 import java.security.SecureRandom;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect CustomerDataOnDemand_Roo_DataOnDemand {
@@ -23,6 +25,9 @@ privileged aspect CustomerDataOnDemand_Roo_DataOnDemand {
     
     private List<Customer> CustomerDataOnDemand.data;
     
+    @Autowired
+    private CompanyDataOnDemand CustomerDataOnDemand.companyDataOnDemand;
+    
     public Customer CustomerDataOnDemand.getNewTransientCustomer(int index) {
         Customer obj = new Customer();
         setCompanyId(obj, index);
@@ -32,7 +37,7 @@ privileged aspect CustomerDataOnDemand_Roo_DataOnDemand {
     }
     
     public void CustomerDataOnDemand.setCompanyId(Customer obj, int index) {
-        Company companyId = null;
+        Company companyId = companyDataOnDemand.getRandomCompany();
         obj.setCompanyId(companyId);
     }
     

@@ -7,6 +7,7 @@ import com.malsolo.crm.domain.CartOrder;
 import com.malsolo.crm.domain.CartOrderDataOnDemand;
 import com.malsolo.crm.domain.LineItem;
 import com.malsolo.crm.domain.Product;
+import com.malsolo.crm.domain.ProductDataOnDemand;
 import java.lang.Long;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -29,6 +30,9 @@ privileged aspect LineItemDataOnDemand_Roo_DataOnDemand {
     @Autowired
     private CartOrderDataOnDemand LineItemDataOnDemand.cartOrderDataOnDemand;
     
+    @Autowired
+    private ProductDataOnDemand LineItemDataOnDemand.productDataOnDemand;
+    
     public LineItem LineItemDataOnDemand.getNewTransientLineItem(int index) {
         LineItem obj = new LineItem();
         setCartOrderId(obj, index);
@@ -43,7 +47,7 @@ privileged aspect LineItemDataOnDemand_Roo_DataOnDemand {
     }
     
     public void LineItemDataOnDemand.setProductId(LineItem obj, int index) {
-        Product productId = null;
+        Product productId = productDataOnDemand.getRandomProduct();
         obj.setProductId(productId);
     }
     

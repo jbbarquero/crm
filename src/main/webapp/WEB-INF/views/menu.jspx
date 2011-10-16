@@ -25,6 +25,7 @@
         </menu:category>
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__databaseinfoindex_id" messageCode="global_generic" url="/databaseinfo/index" z="jTcaKlMcU34ArTuIRzelV0zHg+E="/>
+            <menu:item id="i_controller__databaseinfoinfo_id" messageCode="global_generic_info" url="/databaseinfo/info" z="user-managed"/>
         </menu:category>
     </menu:menu>
 </div>

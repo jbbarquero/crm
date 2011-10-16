@@ -42,4 +42,15 @@ public class DatabaseInfoController {
     	modelMap.put("versionInfo", versionInfo);
     	return "databaseinfo/index";
     }
+    
+    @RequestMapping
+    public String info(ModelMap modelMap) {
+    	String appHost = System.getenv("VCAP_APP_HOST");
+    	String appPort = System.getenv("VCAP_APP_PORT");
+    	modelMap.put("appHost", appHost);
+    	modelMap.put("appPort", appPort);
+    	return "databaseinfo/info";
+    }
+    
+    
 }

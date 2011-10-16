@@ -4,4 +4,7 @@
     <definition extends="default" name="databaseinfo/index">
         <put-attribute name="body" value="/WEB-INF/views/databaseinfo/index.jspx"/>
     </definition>
+    <definition extends="default" name="databaseinfo/info">
+        <put-attribute name="body" value="/WEB-INF/views/databaseinfo/info.jspx"/>
+    </definition>
 </tiles-definitions>

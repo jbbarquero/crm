@@ -52,6 +52,11 @@
             <name>Spring Roo Repository</name>
             <url>http://spring-roo-repository.springsource.org/release</url>
         </pluginRepository>
+        <pluginRepository>
+        	<id>repository.springframework.maven.milestone</id>
+        	<name>Spring Framework Maven Milestone Repository</name>
+        	<url>http://maven.springframework.org/milestone</url>
+        </pluginRepository>
     </pluginRepositories>
     <dependencies>
         <!-- General dependencies for standard applications -->
@@ -556,6 +561,11 @@
                         <contextPath>/${project.name}</contextPath>
                     </webAppConfig>
                 </configuration>
+            </plugin>
+            <plugin>
+            	<groupId>org.cloudfoundry</groupId>
+            	<artifactId>cf-maven-plugin</artifactId>
+            	<version>1.0.0.M1</version>
             </plugin>
         </plugins>
     </build>

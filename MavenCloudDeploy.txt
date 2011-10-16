@@ -1,0 +1,31 @@
+See: http://blog.springsource.com/2011/09/22/rapid-cloud-foundry-deployments-with-maven/
+
+Configuration:
+            <plugin>
+                <groupId>org.cloudfoundry</groupId>
+                <artifactId>cf-maven-plugin</artifactId>
+                <version>1.0.0.M1</version>
+                <configuration>
+                    <server>mycloudfoundry-instance</server>
+                    <target>http://api.cloudfoundry.com</target>
+                    <url>hello-java-maven.cloudfoundry.com</url>
+                    <memory>256</memory>
+                </configuration>
+            </plugin>
+
+    <pluginRepository>
+        <id>repository.springframework.maven.milestone</id>
+        <name>Spring Framework Maven Milestone Repository</name>
+        <url>http://maven.springframework.org/milestone</url>
+    </pluginRepository>
+
+Usage:
+$ mvn cf:<<command>> [-Dcf.some_parameters] [-Dcf.some_other_parameter...]
+
+
+Examples:
+mvn cf:apps -Dcf.username=jbbarquero@gmail.com -Dcf.password=XXX -Dcf.target=http://api.cloudfoundry.com
+
+mvn cf:info -Dcf.username=jbbarquero@gmail.com -Dcf.password=XXX -Dcf.target=http://api.cloudfoundry.com
+
+mvn cf:apps -Dcf.target=http://api.macsolo.cloudfoundry.me -Dcf.password=XXX -Dcf.username=jbbarquero@gmail.com

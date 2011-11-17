@@ -24,9 +24,9 @@
             <menu:item id="i_product_list" messageCode="global_menu_list" url="/products?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kEeyCmUUYXShbDEWwOLheaAkM50="/>
         </menu:category>
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
-            <menu:item id="i_controller__databaseinfoindex_id" messageCode="global_generic_db_info" url="/databaseinfo/index" z="jTcaKlMcU34ArTuIRzelV0zHg+E="/>
+            <menu:item id="i_controller__databaseinfoindex_id" messageCode="global_generic_db_info" url="/databaseinfo/index" z="user-managed"/>
             <menu:item id="i_controller__databaseinfoinfo_id" messageCode="global_generic_url_info" url="/databaseinfo/info" z="user-managed"/>
-            <menu:item id="i_controller__environmentindex_id" messageCode="global_generic_env_info" url="/environment/index" z="uqLWwJR4IY4SQu33qcckcbTmK+I="/>
+            <menu:item id="i_controller__environmentindex_id" messageCode="global_generic_env_info" url="/environment/index" z="user-managed"/>
         </menu:category>
     </menu:menu>
 </div>
